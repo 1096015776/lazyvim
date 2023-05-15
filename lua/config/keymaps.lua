@@ -40,3 +40,4 @@ map(
 map("v", "<cr>", ":lua require'nvim-treesitter.incremental_selection'.node_incremental()<cr>", { desc = "select" })
 map("n", "gk", ':lua require"gitsigns".prev_hunk()<cr>')
 map("n", "gj", ':lua require"gitsigns".next_hunk()<cr>')
+map("n", "<c-q>", ":q<cr>")

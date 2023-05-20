@@ -14,8 +14,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "darcula-solid",
-      colorscheme = "gruvbox",
+      colorscheme = "darcula-solid",
+      -- colorscheme = "gruvbox",
     },
   },
 }

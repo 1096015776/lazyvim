@@ -41,3 +41,6 @@ map("v", "<cr>", ":lua require'nvim-treesitter.incremental_selection'.node_incre
 map("n", "gk", ':lua require"gitsigns".prev_hunk()<cr>')
 map("n", "gj", ':lua require"gitsigns".next_hunk()<cr>')
 map("n", "<c-q>", ":q<cr>")
+map("n", "<leader><leader>", ":e #<cr>")
+map("n", "<c-g>", ":tabe<cr>:-tabmove<cr>:term lazygit<cr>i")
+map("n", "<c-e>", ":tabe<cr>:-tabmove<cr>:term ranger<cr>i")

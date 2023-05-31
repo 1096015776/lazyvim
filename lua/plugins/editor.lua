@@ -21,7 +21,7 @@ return {
             if type == "file" then
               cwd = string.sub(node.path, 0, string.len(node.path) - string.len(node.name))
             else
-              cwd = node.path .. "/*"
+              cwd = node.path .. "/"
             end
             vim.cmd("Neotree close")
             require("spectre").open({

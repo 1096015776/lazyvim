@@ -83,18 +83,6 @@ return {
     end,
   },
   {
-    "akinsho/toggleterm.nvim",
-    version = "*",
-    config = function()
-      require("toggleterm").setup()
-      -- vim.cmd([[nnoremap <silent><c-y> <Cmd>exe v:count1 . "ToggleTerm"<CR>]])
-      -- vim.cmd([[inoremap <silent><c-y> <esc><Cmd>exe v:count1 . "ToggleTerm"<CR>]])
-      -- vim.cmd([[autocmd TermEnter term://*toggleterm#*
-      -- \ tnoremap <silent><c-y> <Cmd>exe v:count1 . "ToggleTerm"<CR>]])
-    end,
-  },
-  {
     "voldikss/vim-floaterm",
-
   }
 }

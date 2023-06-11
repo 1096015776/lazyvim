@@ -11,7 +11,6 @@ map({ "n", "v" }, "L", "$", { desc = "esc" })
 map("i", "<c-v>", "<c-r>*")
 
 -- use clipboard
-map({ "v" }, "p", '"0p', { silent = true, noremap = true })
 map("v", "<leader>y", '"*y')
 map("n", "<leader>p", '"*p')
 
@@ -28,3 +27,8 @@ map("n", "gk", ':lua require"gitsigns".prev_hunk()<cr>')
 map("n", "gj", ':lua require"gitsigns".next_hunk()<cr>')
 map("n", "<c-q>", ":q<cr>")
 map("n", "<leader><leader>", ":e #<cr>")
+map("n", "<leader>1", function()
+  require("telescope.builtin").find_files({
+    previewer = false,
+  })
+end)

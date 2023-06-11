@@ -90,13 +90,13 @@ return {
       vim.g.floaterm_height = 0.8
       vim.g.floaterm_autoclose = 0
       vim.g.floaterm_autohide = 2
-      vim.g.floaterm_opener = "edit"
+      vim.g.floaterm_opener = "vsplit"
       vim.cmd(
         [[au BufEnter * if &buftype == 'terminal' | :call timer_start(50, { -> execute('startinsert!') }, { 'repeat': 3 }) | endif]]
       )
-      require('util.term').setFTToggleMap('<c-e>','ranger','ranger')
-      require('util.term').setFTToggleMap('<c-g>','lazygit','lazygit')
-      require('util.term').setFTToggleMap('<c-y>','term','')
+      require("util.term").setFTToggleMap("<c-e>", "ranger", "ranger")
+      require("util.term").setFTToggleMap("<c-g>", "lazygit", "lazygit")
+      require("util.term").setFTToggleMap("<c-y>", "term", "")
 
       -- vim.cmd([[hi FloatermBorder ctermfg=fg ctermbg=none]])
     end,

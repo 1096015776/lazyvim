@@ -10,9 +10,11 @@ map({ "n", "v" }, "L", "$", { desc = "esc" })
 -- c-v use clipboard
 map("i", "<c-v>", "<c-r>*")
 
--- use clipboard
+-- some register setting
 map("v", "<leader>y", '"*y')
 map("n", "<leader>p", '"*p')
+map({ "n", "v" }, "c", '"_c', { noremap = true })
+map({ "n", "v" }, "x", '"_x', { noremap = true })
 
 -- easy select
 map(
